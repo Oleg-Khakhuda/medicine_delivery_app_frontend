@@ -74,8 +74,8 @@ export const CartList = () => {
                 phone: "",
                 address: "",
             });
+          }
             alert("Order created!");
-            }
             } catch (error) {
             console.error("Error:", error);
             }
