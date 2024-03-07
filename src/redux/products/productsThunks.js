@@ -1,8 +1,6 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-axios.defaults.baseURL = "http://localhost:7000";
-
 export const productsThunk = createAsyncThunk(
     "products/fetchProducts",
     async (_, { rejectWithValue }) => {
