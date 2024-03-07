@@ -1,0 +1,23 @@
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    height: 500px;
+    border: solid 1px;
+    border-radius: 10px;
+    margin-right: 40px;
+}
+
+label {
+    margin-bottom: 30px;
+}
+
+input {
+    display: flex;
+    height: 30px;
+    border: solid 1px;
+    border-radius: 3px;
+    padding-left: 15px;
+}

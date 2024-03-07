@@ -1,0 +1,23 @@
+.item {
+    border: solid 1px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #8bbecd; 
+    border: solid 1px #212121;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: #79a3b0; 
+}

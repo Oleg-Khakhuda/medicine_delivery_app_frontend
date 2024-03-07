@@ -1,0 +1,51 @@
+.list {
+    width: 400px;
+    height: 500px;
+    border: solid 1px;
+    border-radius: 10px;
+    margin-right: 40px;
+    
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.link {
+    background-color: #b5e1f8;
+}
+
+.shops {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px;
+    border-radius: 5px;
+    width: 200px;
+    margin-bottom: 20px;
+    background-color: #cfe3ec;
+    
+}
+
+.shops:hover {
+    background-color: #b5e1f8;
+}
+
+.shops a {
+    width: 100%;
+    padding: 20px 60px 20px 60px;
+}
+
+.text {
+    text-align: center;
+}
