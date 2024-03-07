@@ -7,10 +7,11 @@ import s from "./ShopPage.module.css"
 
 export const ShopsPage = () => {
   const {shopId} = useParams();
+  console.log(shopId);
   return (
     <div className={s.home}>
       <ShopList/>
-      {shopId === "medicine_delivery_app_frontend" ? <ProductList /> : <ProductListByShop />}
+      {shopId === "medicine_delivery_app_frontend" || shopId === undefined ? <ProductList /> : <ProductListByShop />}
     </div>
   )
 }
