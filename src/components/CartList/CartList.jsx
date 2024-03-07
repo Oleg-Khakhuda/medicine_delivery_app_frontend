@@ -61,7 +61,7 @@ export const CartList = () => {
     
         try {
           const response = await axios.post(
-            "http://localhost:7000/api/orders",
+            "https://medicine-delivery-app-backend-h4uu.onrender.com/api/orders",
             dataCart
           );
           if(response) {
@@ -83,7 +83,7 @@ export const CartList = () => {
     
     return (
     <>
-      <form className={s.form} onSubmit={handleSubmit}>
+      <form className={s.form}>
         {products.length > 0 
         ? <ProductsForm data={data} handleChange={handleChange}/> 
         : <p className={s.text}>Basket is empty</p>}
@@ -112,7 +112,7 @@ export const CartList = () => {
     </form>
     <div className={s.submit}>
       <p>{`Total price: ${Math.round(totalPrice * 100) / 100}`} $</p> 
-      <button className={s.button} type="submit">Submit</button>
+      <button className={s.button} type="submit" onClick={handleSubmit}>Submit</button>
     </div>
     </>
   )

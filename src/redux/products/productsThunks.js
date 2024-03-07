@@ -1,6 +1,8 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
+axios.defaults.baseURL = "https://medicine-delivery-app-backend-h4uu.onrender.com"
+
 export const productsThunk = createAsyncThunk(
     "products/fetchProducts",
     async (_, { rejectWithValue }) => {
