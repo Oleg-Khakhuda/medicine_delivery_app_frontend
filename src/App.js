@@ -12,7 +12,7 @@ function App() {
       <Navigation />
       <main>
       <Routes>
-        <Route path="/" element={<ShopsPage />}>
+        <Route path="/medicine_delivery_app_frontend" element={<ShopsPage />}>
           <Route path="/:shopId" element={<ProductListByShop />} />
         </Route>
         <Route path="/cart" element={<CartPage />} />
