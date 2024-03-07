@@ -10,7 +10,7 @@ export const ShopsPage = () => {
   return (
     <div className={s.home}>
       <ShopList/>
-      {!shopId ? <ProductList /> : <ProductListByShop />}
+      {shopId === "medicine_delivery_app_frontend" ? <ProductList /> : <ProductListByShop />}
     </div>
   )
 }
